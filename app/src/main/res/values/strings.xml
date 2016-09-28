@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Gank</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="search">搜索内容</string>
+    <string name="normal">正常模式</string>
+    <string name="yaoyiyao">摇一摇模式</string>
+    <string name="submit_gank">提交干货</string>
+    <string name="id">请输入您的网络ID:</string>
+    <string name="reson">干货的推荐理由:</string>
+    <string name="url">请输入干货的URL:</string>
+    <string name="type">干货的类型:</string>
+</resources>

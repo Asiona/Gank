@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item android:id="@+id/main_home"
+            android:checked="true"
+            android:icon="@mipmap/home"
+            android:title="GANKHOME" />
+        <item android:id="@+id/main_android"
+            android:icon="@mipmap/android"
+            android:title="ANDROID" />
+        <item android:id="@+id/main_ios"
+            android:icon="@mipmap/ios"
+            android:title="IOS" />
+        <item android:id="@+id/main_web"
+            android:icon="@mipmap/web"
+            android:title="WEB" />
+        <item android:id="@+id/main_benefit"
+            android:icon="@mipmap/smile"
+            android:title="BENEFITS" />
+        <item android:id="@+id/main_video"
+            android:icon="@mipmap/video"
+            android:title="VIDEOFUN" />
+        <item android:id="@+id/main_res"
+            android:icon="@mipmap/more"
+            android:title="MORE" />
+    </group>
+
+    <item android:title="OTHERS">
+        <menu>
+            <item
+                android:id="@+id/main_details"
+                android:icon="@mipmap/details"
+                android:title="DETAILS"/>
+            <item
+                android:id="@+id/main_exit"
+                android:icon="@mipmap/exit"
+                android:title="EXIT"/>
+        </menu>
+    </item>
+
+</menu>

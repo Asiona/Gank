@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_send"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context="com.asion.gank.activities.SendActivity">
+
+    <ImageButton
+        android:layout_width="50dp"
+        android:src="@mipmap/delete"
+        android:background="#00000000"
+        android:id="@+id/send_close"
+        android:elevation="10dp"
+        android:layout_alignParentRight="true"
+        android:layout_margin="10dp"
+        android:layout_height="50dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:id="@+id/send_type"
+        android:text="@string/type"
+        android:textSize="18sp"
+        android:layout_marginLeft="15dp"
+        android:layout_below="@id/send_close"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_marginTop="10dp"
+        android:id="@+id/type"
+        android:text="Android"
+        android:textColor="@color/colorSecondText"
+        android:textSize="16sp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_below="@id/send_type"
+        android:layout_height="wrap_content" />
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_below="@id/type"
+        android:id="@+id/send_url"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/url"
+            android:layout_width="match_parent"
+            android:hint="@string/url"
+            android:textColorHint="@color/colorIcons"
+            android:layout_height="wrap_content" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_below="@id/send_url"
+        android:id="@+id/send_desc"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/desc"
+            android:layout_width="match_parent"
+            android:hint="@string/reson"
+            android:textColorHint="@color/colorIcons"
+            android:layout_height="wrap_content" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_below="@id/send_desc"
+        android:id="@+id/send_who"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/who"
+            android:layout_width="match_parent"
+            android:hint="@string/id"
+            android:textColorHighlight="@color/colorIcons"
+            android:layout_height="wrap_content" />
+    </android.support.design.widget.TextInputLayout>
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_below="@id/send_who"
+        android:background="@color/colorAccent"
+        android:id="@+id/submit_gank"
+        android:text="@string/submit_gank"
+        android:textSize="18sp"
+        android:layout_margin="15dp"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

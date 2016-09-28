@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_searchresult"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.asion.gank.activities.SearchResultActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@color/colorPrimary"
+        android:layout_height="?attr/actionBarSize">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:src="@mipmap/back"
+            android:id="@+id/result_back"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="搜索结果"
+            android:textSize="18sp"
+            android:textColor="@color/colorIcons"
+            android:layout_centerInParent="true"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/search_result"
+        android:text="暂无搜索结果"
+        android:textSize="20sp"
+        android:textColor="@color/colorPrimary"
+        android:layout_centerInParent="true"
+        />
+
+</RelativeLayout>
