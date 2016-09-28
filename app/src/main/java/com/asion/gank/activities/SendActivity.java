@@ -42,8 +42,6 @@ public class SendActivity extends AppCompatActivity {
         setContentView(R.layout.activity_send);
         initView();
         startAnimotion();
-
-
     }
 
     private void hideKeyboard() {
@@ -136,6 +134,12 @@ public class SendActivity extends AppCompatActivity {
         mSubmitGank = (Button) findViewById(R.id.submit_gank);
 
         mSubmitGank.setOnClickListener(v -> submit());
+
+        mType.setOnClickListener(v ->showSelectDialog());
+    }
+
+    private void showSelectDialog() {
+
     }
 
     private void submit() {
